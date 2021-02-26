@@ -38,23 +38,18 @@ void PCB :: removePCB()
     }
     else if(this->olderSibling == 0 && this->parent != 0)
     {
-        std::cout<<"test1\n";
         this->youngerSibling = 0;
         this->parent->setChild(0);
     }
     else if(this->youngerSibling == 0)
     {
-        std::cout<<"test2\n";
         this->olderSibling->youngerSibling = 0;
     }
     else
     {
         PCB* youngTemp = this->youngerSibling;
         PCB* oldTemp = this->olderSibling;
-        std::cout<<"test3\n";
-        oldTemp->setyoungerSibling(youngTemp);
-        std::cout<<"test3\n";
-        //oldTemp->youngerSibling = youngTemp; 
+        oldTemp->setyoungerSibling(youngTemp); 
     }
 }
 
