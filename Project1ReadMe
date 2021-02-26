@@ -1,0 +1,7 @@
+1) Version 1 = CodingProject1Part1
+    Version 2 = CodingProject1Part2
+    
+2) Test programs in "driver.cpp" file of each version
+
+3) Over time, version two proves to be more efficient as it avoids the same memory tinkerage of Linked Lists. 
+However, from a human understanding standpoint, I found the first method to be easier to comprehend. 
